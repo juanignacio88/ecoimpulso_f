@@ -1,0 +1,110 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+//@import "@ionic/angular/css/palettes/dark.system.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+
+	--ion-color-primary: #ffa91e;
+	--ion-color-primary-rgb: 255,169,30;
+	--ion-color-primary-contrast: #ffffff;
+	--ion-color-primary-contrast-rgb: 0,0,0;
+	--ion-color-primary-shade: #e0951a;
+	--ion-color-primary-tint: #ffb235;
+
+    --color-danger: #FF0060;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #87bf79;
+
+
+    --card-border-radius: 25px;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+
+    --box-shadow: 0 10px 16px 2px var(--color-light);
+}
+
+ion-content{
+    --background: var(--color-background);
+}
+
+.danger{
+    color: var(--color-danger);
+}
+
+.primary{
+    color: var(--ion-color-primary);
+}
+
+body{
+    width: 100dvw;
+    height: 100dvh;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mx-auto{
+    margin: auto;
+}
+
+.mx-10{
+    margin: 10px;
+}
+
+.mx-top-5{
+    margin-top: 5px;
+}
+
+.mx-top-10{
+    margin-top: 10px;
+}
